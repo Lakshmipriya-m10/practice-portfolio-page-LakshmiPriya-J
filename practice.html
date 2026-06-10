@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Page</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
     <body>
-        <h1>💻My Portfolio </h1>
-        <img src="./image/portfolio.png" width ="500px" alt="working in laptop">
-        <h2>Name: Lakshmi Priya Jeyaram</h2>
+        <h1 id ="title">💻My Portfolio </h1>
+        <h2 id ="my">Name: Lakshmi Priya Jeyaram</h2>
         <p>Full-Stack Developer</p>
             <section>
-                <h3>About Me 🙋‍♀️</h3>
+                <img src="./image/lp.jpg" width ="100px" alt="my image">
+                
+                <h3 id ="aboutme">About Me 🙋‍♀️</h3>
     
                 <p>I am an IT graduate currently building my skills in web development and programming. 
                      I enjoy learning new technologies and improving my problem-solving abilities.
@@ -20,7 +22,8 @@
                     My goal is to become a skilled software developer and contribute to real-world projects.</p>
             </section>
             <section>
-                <h4>Skills🛠️</h4>
+                <div class="highlight">
+                <h3 title="skills">Skills🛠️</h3>
                 <table border ="1">
                     <tr>
                         <th>Category</th>
@@ -43,9 +46,20 @@
                         <td>MySQL (basic)</td>
                     </tr>
                 </table>
+                </div>
+                        <section>
+                            <h3 id ="currentlearning">Currently Learning 📚 </h3>
+                            <ol>
+                                <li>Node.js (backend development basics)</li>
+                                <li>Advanced JavaScript</li>
+                                <li>Python automation scripts</li>
+                                <li>Artificial Intelligence (AI)</li>
+                            </ol>
+                        </section>
+
             </section>
             <section>
-                <h4>Contact Form 📩</h4>
+                <h3 id="contactform">Contact Form 📩 </h3>
                 <form>
                     <label type="name">Name</label><br> 
                         <input type="name" id="name" name="name"><br>
@@ -62,11 +76,12 @@
                     </div>
 
                 </form>
-               
+               </section>
             </section>
 
 </form>
 </body>
 <footer>
-    <div style="text-align: center;""><em>"Thanks for taking the time to explore my portfolio.</em></footer>      
+    <div style="text-align: center;">&copy; Lakshmi Priya | Web Developer Portfolio | All Rights Reserved.</div>
+    <div style="text-align: center;"><em>"Thanks for taking the time to explore my portfolio.</em></footer>      
 </html>
